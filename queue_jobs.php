@@ -1,5 +1,7 @@
 <?php
 
+require_once 'vendor/autoload.php';
+
 Resque::setBackend(getenv("REDIS_HOST") . ":" . getenv("REDIS_PORT"));
 
 $numJobs = 1000;
