@@ -1,0 +1,15 @@
+{
+  "name": "dpanzer/RedisTest",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "Danny Panzer",
+      "email": "danny.panzer@microblink.com.com"
+    }
+  ],
+  "require": {
+    "resque/php-resque": "dev-master"
+  }
+}
