@@ -3,8 +3,10 @@
 class RedisTestJob {
     public function perform() {
         $jobId = $this->args['job_id'];
-        echo "Job {$jobId} going to sleep for 5\n";
-        sleep(5);
+        $sleepTime = $this->args['sleep_time']
+
+        echo "Job {$jobId} going to sleep for {$sleepTime}\n";
+        sleep($sleepTime);
         echo "Job {$jobId} woke up\n";
     }
 }
