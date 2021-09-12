@@ -1,0 +1,1 @@
+QUEUE=redis_test_jobs APP_INCLUDE=RedisTestJob.php COUNT=16 REDIS_BACKEND=${REDIS_HOST}:${REDIS_PORT} php vendor/bin/resque > worker.out 2>&1 &
