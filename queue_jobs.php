@@ -8,6 +8,8 @@ $numJobs = 1000;
 
 $sleepTime = $argc > 1 ? intval($argv[1]) : 5;
 
+mkdir("output", 0777);
+
 for ($i = 0; $i < $numJobs; $i++) {
     Resque::enqueue(
         "redis_test_jobs",
